@@ -7,6 +7,10 @@ html body{
     border-radius: 5px;
     
 }
+body a{
+    text-decoration: none;
+    color: white;
+}
 header{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -15,7 +19,9 @@ header{
     line-height: 60px;
     border-top-left-radius: 5px;
     border: solid 1px rgb(40, 1, 1);
-    
+}
+nav{
+    margin-left: 65px;
 }
 nav a{
     display: flex;
@@ -25,7 +31,7 @@ nav a{
     font-weight: bolder;
     text-decoration: none;
 }
-a:hover {
+nav a:hover {
     /* color: rgb(20, 74, 9); */
     transform: translateY(-5px);
     font-weight: bolder;
@@ -59,30 +65,56 @@ a:hover {
 .bio{
     margin-top: 300px;
 }
-.right{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* gap: 0px; */
-   
+.right{   
 
-    padding: 15px;
-    border-radius: 7px;
+    padding:0 15px;
+    /* border-radius: 7px; */
     width: 600px;
     height: 550px;
-    background-color: rgba(0, 0, 0, 0.5);   
+    /* background-color: rgba(0, 0, 0, 0.5);    */
     /* border: solid 1px rgb(40, 1, 1); */
     margin:20px auto;
     /* box-shadow: 5px 5px 25px rgba(89, 20, 5, 0.7); */
 }
-.right:hover {
+.upper{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    width: 600px;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+.upper:hover {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 5px 5px 25px rgba(20, 73, 35, 0.7);
     /* transform: translateY(-20px); */
 }
-.card{
-    height: 30px;
+.lower{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 7px;
+    width: 600px;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+.lower:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 25px rgba(20, 73, 35, 0.7);
+    /* transform: translateY(-20px); */
+}
+button{
     width: 100px;
-    border: solid 1px white;
+    height: 30px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    background-color: rgba(0, 0, 0, 0.648);  
+    border: solid 1px rgb(24, 23, 23);
+    margin: 30px;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid 1px rgb(70, 68, 68);
+    transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
@@ -94,5 +126,10 @@ a:hover {
         width: 90%;
         height: auto;
         margin: 10px 0;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
