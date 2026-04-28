@@ -18,10 +18,9 @@
         </div>
 
         <nav id="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <!-- <a href="#projects">Projects</a> -->
-            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="my work.html">My Works</a>
         </nav>
     </header>
     
@@ -31,44 +30,63 @@
                 <h1>Sandeep Kumar Bharti</h1>
                 <p><strong>Aspiring Data Scientist / Machine Learning Engineer</strong></p>
                 <p>Hi, I'm Sandeep! I'm passionate about leveraging data to solve real-world problems and drive innovation.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+
+                <div style="display: flex; justify-content: space-between;">
+                    <a style="text-decoration: underline; color: rgb(1, 200, 255);" href="about.html">know more about me</a>
+                    <a style="text-decoration: underline; color: rgb(1, 200, 255);" href="video.html">video resume</a>
+                </div>
+                
+            </div>
         </section>
         
         <section class="right">
-            <div class="upper">
-                <button><a href="">Skills</a></button>                
-                <button><a href="">Education</a></button>              
-                <button><a href="">Projects</a></button>   
-                <button><a href=""></a></button>                
-                <button><a href=""></a></button>              
-                <button><a href=""></a></button>     
-                <button><a href=""></a></button>                
-                <button><a href=""></a></button>              
-                <button><a href=""></a></button>   
-                <button><a href=""></a></button>                
-                <button><a href=""></a></button>              
-                <button><a href=""></a></button>    
-            </div>
-            <div class="lower">
-                <button><a href="https://www.linkedin.com/in/sandeep-bharti-7aa954329" target="_blank">LinkedIn</a></button>                
-                <button><a href="https://github.com/Kr19-sandeep" target="_blank">GitHub</a></button>               
-                <button><a href="#" target="_blank">X</a></button>                
-                <button><a href="https://www.instagram.com/sandeepbharti366/" target="_blank">Instagram</a></button>   
+            <div style="display: block;" class="upper">  
 
-                
-                
+                <div class="sub-upper">
+                    <h2>Skills</h2>
+                </div>  
+
+                <div class="sub-lower">
+                    <button><a href="">Python</a></button>                
+                    <button><a href="">ML</a></button>     
+                    <button><a href="">Deep Learning</a></button>            
+                    <button><a href="">Numpy</a></button>   
+                    <button><a href="">Pandas</a></button>              
+                    <button><a href="">Sklearn</a></button>     
+                    <button><a href="">seaborn</a></button>                
+                    <button><a href="">Matplotlib</a></button>              
+                    <button><a href="">TensorFlow</a></button>   
+                    <button><a href="">Django</a></button>                
+                    <button><a href="">SQL</a></button>              
+                    <button><a href="">C</a></button>   
+                    <button><a href="">JAVA</a></button>  
+                    <button><a href="">JavaScript</a></button>              
+                    <button><a href=""></a></button>   
+                    <button><a href=""></a></button>  
+
+                </div>
+                 
             </div>
-        </section>
+            <div  style="display: block;" class="lower">
+
+                <div  class="sub-upper">
+                    <h3>Get in touch</h3>
+                </div>
+
+                <div class="sub-lower">
+                    <!-- <input type="search" placeholder="search"> -->
+
+
+                    <button><a href="https://www.linkedin.com/in/sandeep-bharti-7aa954329" target="_blank">LinkedIn</a></button>                
+                    <button><a href="https://github.com/Kr19-sandeep" target="_blank">GitHub</a></button>               
+                    <button><a href="#" target="_blank">X</a></button>                
+                    <button><a href="https://www.instagram.com/sandeepbharti366/" target="_blank">Instagram</a></button>
+                </div>
+                  
+            </div>
+        </section> 
     </main>    
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
